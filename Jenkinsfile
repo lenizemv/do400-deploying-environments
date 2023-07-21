@@ -32,7 +32,7 @@ pipeline {
 				'''
 				archiveArtifacts 'target/*.jar'
 
-stage('Build Image') {
+		stage('Build Image') {
 
 			environment { QUAY = credentials('QUAY_USER') }
 
